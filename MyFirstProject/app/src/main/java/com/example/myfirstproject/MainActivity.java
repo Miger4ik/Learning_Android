@@ -2,7 +2,9 @@ package com.example.myfirstproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private String goodsName;
     private static int quantityItems;
     private static int price;
+    private static String userNameText;
     //
     ArrayAdapter spinnerAdapter;
 
@@ -59,6 +62,27 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             @Override
             public void onClick(View v) {
                 decrementItem();
+            }
+        });
+
+        addToCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                userNameText = userName.getText().toString();
+                Order order = new Order();
+                order.setUserName(userNameText);
+                order.setGoodsName(goodsName);
+                order.setQuantity(quantityItems);
+                order.setOrderPrice(price * quantityItems);
+
+                Intent orderIntent = new Intent(MainActivity.this, OrderActivity.class);
+
+                orderIntent.putExtra("userNameText", order.getUserName());
+                orderIntent.putExtra("goodsName", order.getGoodsName());
+                orderIntent.putExtra("quantityItems", order.getQuantity());
+                orderIntent.putExtra("orderPrice", order.getOrderPrice());
+
+                startActivity(orderIntent);
             }
         });
     }
