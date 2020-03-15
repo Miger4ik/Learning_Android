@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="menu_item_main">Головна</string>
+    <string name="menu_item_list">Список</string>
+    <string name="menu_item_my_devices">Мої пристрої</string>
+    <string name="menu_item_equals">Порівняти</string>
+    <string name="menu_item_visit_page">Відвідати сайт</string>
+    <string name="menu_item_about_program">Про програму</string>
+
+    <string name="main_button">Головна</string>
+    <string name="list_button">Список</string>
+    <string name="my_device_button">Мої пристрої</string>
+    <string name="equals_button">Порівняти</string>
+    <string name="visit_page_button">Відвідати сайт</string>
+    <string name="about_program_button">Про програму</string>
+
+    <string name="provider_gps">GPS</string>
+    <string name="provider_network">Network</string>
+    <string name="location_settings">Location settings</string>
+</resources>

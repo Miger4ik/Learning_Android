@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="0.00/0.00"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/startLocationUpdatesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Location Updates"
+        android:enabled="true"
+        android:layout_marginTop="100dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+    <Button
+        android:id="@+id/stopLocationUpdatesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Location Updates"
+        android:enabled="false"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+</LinearLayout>

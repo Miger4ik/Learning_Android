@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_main">
+
+    <fragment
+        android:id="@+id/nav_main"
+        android:name="com.example.drawer.MainFragment"
+        android:label="@string/menu_item_main"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/nav_list"
+        android:name="com.example.drawer.ListFragment"
+        android:label="@string/menu_item_list"
+        tools:layout="@layout/fragment_list" />
+
+    <fragment
+        android:id="@+id/nav_my_device"
+        android:name="com.example.drawer.MyDeviceFragment"
+        android:label="@string/menu_item_my_devices"
+        tools:layout="@layout/fragment_my_device" />
+
+    <fragment
+        android:id="@+id/nav_equals"
+        android:name="com.example.drawer.EqualsFragment"
+        android:label="@string/menu_item_equals"
+        tools:layout="@layout/fragment_equals" />
+
+    <fragment
+        android:id="@+id/nav_visit_page"
+        android:name="com.example.drawer.VisitPageFragment"
+        android:label="@string/menu_item_visit_page"
+        tools:layout="@layout/fragment_visit_page" />
+
+    <fragment
+        android:id="@+id/nav_about_program"
+        android:name="com.example.drawer.AboutProgramFragment"
+        android:label="@string/menu_item_about_program"
+        tools:layout="@layout/fragment_about_program" />
+
+</navigation>

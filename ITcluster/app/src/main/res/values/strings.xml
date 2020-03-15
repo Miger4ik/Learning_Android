@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">IT cluster</string>
+    <string name="main_button">Головна</string>
+    <string name="list_button">Список</string>
+    <string name="my_device_button">Мої пристрої</string>
+    <string name="equals_button">Порівняти</string>
+    <string name="visit_page_button">Відвідати сайт</string>
+    <string name="about_program_button">Про програму</string>
+
+    <string name="provider_gps">GPS</string>
+    <string name="provider_network">Network</string>
+    <string name="location_settings">Location settings</string>
+</resources>

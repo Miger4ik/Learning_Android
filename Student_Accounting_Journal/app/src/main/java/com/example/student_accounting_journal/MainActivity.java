@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         bit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentInformation = new Intent(getApplicationContext(), Information_to_students.class);
+                Intent intentInformation = new Intent(MainActivity.this, Information_to_students.class);
                 startActivity(intentInformation);
             }
         });
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         dot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentSchedule = new Intent(getApplicationContext(), ScheduleOfItems.class);
+                Intent intentSchedule = new Intent(MainActivity.this, ScheduleOfItems.class);
                 startActivity(intentSchedule);
             }
         });
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         dit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentNb = new Intent(getApplicationContext(), NbInformation.class);
+                Intent intentNb = new Intent(MainActivity.this, NbInformation.class);
                 startActivity(intentNb);
             }
         });

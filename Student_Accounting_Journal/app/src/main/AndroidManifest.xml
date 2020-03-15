@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NbInformation"></activity>
+        <activity android:name=".informationStudents"></activity>
+        <activity android:name=".NbInformation" />
         <activity android:name=".ScheduleOfItems" />
         <activity android:name=".Information_to_students" />
         <activity android:name=".MainActivity">
