@@ -14,6 +14,8 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -25,6 +27,11 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+
 import java.util.Date;
 
 import static android.content.Context.LOCATION_SERVICE;
@@ -33,7 +40,6 @@ public class MainFragment extends Fragment {
 
     private TextView tvLocation;
     private Button getSettings;
-    private WebView mapView;
 
     private LocationManager locationManager;
 
@@ -46,7 +52,6 @@ public class MainFragment extends Fragment {
         tvLocation = view.findViewById(R.id.tvLocation);
         getSettings = view.findViewById(R.id.btnLocationSettings);
 
-        locationManager =(LocationManager) getActivity().getSystemService(LOCATION_SERVICE);
 
         getSettings.setOnClickListener(new View.OnClickListener() {
             @Override

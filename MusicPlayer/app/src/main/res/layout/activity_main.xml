@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b2"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="95dp"
+        android:layout_height="89dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="@+id/noteButton"
+        app:layout_constraintEnd_toEndOf="@+id/noteButton"
+        app:layout_constraintStart_toStartOf="@+id/noteButton"
+        app:layout_constraintTop_toTopOf="@+id/noteButton" />
+
+    <ImageButton
+        android:id="@+id/noteButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background = "@drawable/ic_music_note_white_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/circle"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="499dp"
+        app:layout_constraintBottom_toBottomOf="@+id/playButton"
+        app:layout_constraintEnd_toEndOf="@+id/playButton"
+        app:layout_constraintStart_toStartOf="@+id/playButton"
+        app:layout_constraintTop_toTopOf="@+id/playButton"/>
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/ic_play_arrow_white_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/circle"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="498dp"
+        app:layout_constraintBottom_toBottomOf="@+id/previousButton"
+        app:layout_constraintEnd_toEndOf="@+id/previousButton"
+        app:layout_constraintStart_toStartOf="@+id/previousButton"
+        app:layout_constraintTop_toTopOf="@+id/previousButton"/>
+
+    <ImageButton
+        android:id="@+id/previousButton"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/ic_skip_previous_white_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.885"
+        />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/circle"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="498dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nextButton"
+        app:layout_constraintEnd_toEndOf="@+id/nextButton"
+        app:layout_constraintStart_toStartOf="@+id/nextButton"
+        app:layout_constraintTop_toTopOf="@+id/nextButton"/>
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/ic_skip_next_white_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.887" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
